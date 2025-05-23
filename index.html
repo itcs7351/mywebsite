@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ITCS Moradabad - Institute of Computers</title>
+<style>
+  /* Reset and base styling */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+  }
+  a {
+    color: #1e3a8a;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 8px;
+  }
+  header {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  nav {
+    margin-top: 0.5rem;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  main {
+    max-width: 1200px;
+    margin: 2rem auto 4rem;
+    padding: 0 1rem;
+  }
+  /* Hero Section */
+  .hero {
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    color: white;
+    padding: 6rem 2rem 4rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+  }
+  .hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  /* Sections */
+  section {
+    margin-bottom: 3rem;
+  }
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+    border-bottom: 3px solid #1e3a8a;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+  }
+  /* About Section */
+  #about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  /* Courses Section */
+  #courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+  }
+  .course-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease;
+  }
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+  .course-card h3 {
+    margin-top: 0;
+    color: #1e3a8a;
+  }
+  .course-card p {
+    color: #555;
+  }
+  /* Gallery Section */
+  #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+  }
+  /* Contact Section */
+  #contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+  }
+  #contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1e3a8a;
+  }
+  #contact input, #contact textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  #contact input:focus, #contact textarea:focus {
+    border-color: #1e3a8a;
+    outline: none;
+  }
+  #contact button {
+    background: #1e3a8a;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  #contact button:hover {
+    background: #162f6c;
+  }
+  /* Footer */
+  footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-weight: 500;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .hero h2 {
+      font-size: 2.4rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>ITCS Moradabad</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" aria-label="Introduction to ITCS Moradabad">
+    <h2>Welcome to ITCS Moradabad</h2>
+    <p>Your gateway to the world of computer learning, technology mastery, and future career success. Join us to unlock your potential in Information Technology and Computer Science.</p>
+  </section>
+
+  <section id="about" aria-label="About ITCS Moradabad and Computer Learning">
+    <h2>About Us</h2>
+    <p>ITCS Moradabad is a premier institute dedicated to providing quality education and training in the field of computers and technology. Our expert faculty and modern facilities empower students to gain practical and theoretical knowledge in computer science, programming, networking, graphic designing, and software development. We believe in hands-on learning combined with industry exposure to prepare you for the ever-evolving digital world.</p>
+  </section>
+
+  <section id="courses" aria-label="Computer Courses Offered at ITCS Moradabad">
+    <h2>Our Courses</h2>
+    <div class="course-card">
+      <h3>Programming Fundamentals</h3>
+      <p>Learn the basics of programming languages like Python, Java, and C++. Build a strong foundation in coding logic and problem solving.</p>
+    </div>
+    <div class="course-card">
+      <h3>Web Development</h3>
+      <p>Master HTML, CSS, JavaScript, and modern frameworks to build responsive and interactive websites and web apps.</p>
+    </div>
+    <div class="course-card">
+      <h3>Graphic Designing</h3>
+      <p>Discover design principles, photo editing, and software like Adobe Photoshop and Illustrator to bring your creative ideas to life.</p>
+    </div>
+    <div class="course-card">
+      <h3>Networking & Security</h3>
+      <p>Understand computer networks, routing, switching, and cybersecurity fundamentals to protect information and infrastructure.</p>
+    </div>
+    <div class="course-card">
+      <h3>Data Science & AI</h3>
+      <p>Explore data analysis, machine learning, and artificial intelligence concepts to turn data into actionable insights.</p>
+    </div>
+  </section>
+
+  <section id="gallery" aria-label="Gallery of Computer Institute Images">
+    <h2>Gallery</h2>
+    <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=400&q=60" alt="Students working on computers" />
+    <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=400&q=60" alt="Code on computer screen" />
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=60" alt="Laptop with programming code" />
+    <img src="https://images.unsplash.com/photo-1531238721327-2bf3fe0a7a7c?auto=format&fit=crop&w=400&q=60" alt="Network server and connections" />
+    <img src="https://images.unsplash.com/photo-1555949963-8f3e13bb4f04?auto=format&fit=crop&w=400&q=60" alt="Young woman coding on laptop" />
+    <img src="https://images.unsplash.com/photo-1512163143273-dc758ae7145b?auto=format&fit=crop&w=400&q=60" alt="Students in a classroom with computers" />
+  </section>
+
+  <section id="contact" aria-label="Contact ITCS Moradabad">
+    <h2>Contact Us</h2>
+    <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required minlength="3" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message or inquiry" required minlength="10"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formResponse" aria-live="polite" style="margin-top: 1rem; font-weight: 600;"></p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 ITCS Moradabad. All rights reserved.</p>
+</footer>
+
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
+    const name = event.target.name.value.trim();
+    const email = event.target.email.value.trim();
+    const message = event.target.message.value.trim();
+    const responseElem = document.getElementById('formResponse');
+
+    // Basic validation
+    if (name.length < 3) {
+      responseElem.style.color = 'red';
+      responseElem.textContent = 'Please enter a valid name (at least 3 characters).';
+      return;
+    }
+    if (!validateEmail(email)) {
+      responseElem.style.color = 'red';
+      responseElem.textContent = 'Please enter a valid email address.';
+      return;
+    }
+    if (message.length < 10) {
+      responseElem.style.color = 'red';
+      responseElem.textContent = 'Please enter a message of at least 10 characters.';
+      return;
+    }
+    // Simulate sending message
+    responseElem.style.color = '#1e3a8a';
+    responseElem.textContent = 'Thank you for contacting us, ' + name + '! We will get back to you shortly.';
+    event.target.reset();
+  }
+
+  function validateEmail(email) {
+    const re = /^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,4}$/;
+    return re.test(email.toLowerCase());
+  }
+</script>
+</body>
+</html>
+
